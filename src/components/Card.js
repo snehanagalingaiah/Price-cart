@@ -29,6 +29,8 @@ function Card({card}) {
     <h5 className="card-title">{card.name}</h5>
     <p className="card-text"> {card.rating ? "⭐⭐⭐⭐⭐" :""} </p>
     <p className="card-text"><s className="text-secondary"> {card.initialPrice} </s>  {card.finalPrice}</p>
+  </div>
+   <div class="card-footer text-center border-0">
     {add ? 
     <a href="#" className="btn btn-outline-dark" onClick = {addToCart}>Add to Cart</a> : <a href="#" className="btn btn-outline-dark" onClick = {removeFromCart}>Remove from Cart</a>
     }
